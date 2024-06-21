@@ -23,6 +23,7 @@ public class MiCallSDK {
     private static String apiKey;
     private static boolean isAvailable = false;
     private static Endpoint ep = new Endpoint();
+    private static AccountSDK accountSDK = new AccountSDK();
     static private List<MiCallStateListener> observe;
     static void init(String apiKey){
         MiCallSDK.apiKey = apiKey;
