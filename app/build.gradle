@@ -36,9 +36,9 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
 //                from components.release
-                groupId = 'com.github.mint'
-                artifactId = 'mint-android-app'
-                version = '0.0.4'
+                groupId = 'com.github.ldev1211'
+                artifactId = 'micall-sdk'
+                version = '1.0.21'
             }
         }
     }

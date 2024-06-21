@@ -12,7 +12,7 @@ afterEvaluate {
 //                from components.release
                 groupId = 'com.github.ldev1211'
                 artifactId = 'micall-sdk'
-                version = '1.0.20'
+                version = '1.0.21'
             }
         }
     }
