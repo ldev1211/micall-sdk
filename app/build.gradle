@@ -10,6 +10,7 @@ android {
 //        applicationId "com.vn.build.micall.sdk"
         minSdk 24
         targetSdk 34
+        compileSdk 34
         versionCode 1
         versionName "1.0"
 
