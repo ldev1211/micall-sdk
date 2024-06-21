@@ -15,6 +15,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -22,18 +23,25 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-}
 
+}
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'com.vn.build.micall.sdk'
+            artifactId = 'micall-sdk'
+            version = '1.0.0'
+
+//            from components.java
+        }
+    }
+}
 dependencies {
 
-//    implementation libs.appcompat
-//    implementation libs.material
-//    testImplementation libs.junit
-//    androidTestImplementation libs.ext.junit
-//    androidTestImplementation libs.espresso.core
 }
