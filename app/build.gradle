@@ -20,7 +20,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
 
@@ -36,7 +36,9 @@ publishing {
         mavenJava(MavenPublication) {
             groupId = 'com.github.ldev1211'
             artifactId = 'micall-sdk'
-            version = '1.0.12'
+            version = '1.0.13'
+
+//                from components.java
         }
     }
 }
