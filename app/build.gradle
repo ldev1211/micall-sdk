@@ -34,11 +34,9 @@ android {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId = 'com.vn.build.micall.sdk'
+            groupId = 'com.github.ldev1211'
             artifactId = 'micall-sdk'
-            version = '1.0.0'
-
-//            from components.java
+            version = '1.0.12'
         }
     }
 }
