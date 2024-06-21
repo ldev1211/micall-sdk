@@ -3,3 +3,17 @@
 plugins {
 alias(libs.plugins.android.application) apply false
 }
+apply plugin: 'maven-publish'
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+//                from components.release
+                groupId = 'com.github.ldev1211'
+                artifactId = 'micall-sdk'
+                version = '1.0.20'
+            }
+        }
+    }
+}

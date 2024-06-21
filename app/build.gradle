@@ -13,7 +13,7 @@ android {
         compileSdk 32
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
@@ -50,22 +50,22 @@ android {
 //        }
 //    }
 //}
-publishing {
-    publications {
-        release(MavenPublication) {
-            from components.release
-            groupId = 'com.github.ldev1211'
-            artifactId = 'micall-sdk'
-            version = '1.0.18'
-        }
-        debug(MavenPublication) {
-            from components.debug
-            groupId = 'com.github.ldev1211'
-            artifactId = 'micall-sdk'
-            version = '1.0.18'
-        }
-    }
-}
+//publishing {
+//    publications {
+//        release(MavenPublication) {
+////            from components.release
+//            groupId = 'com.github.ldev1211'
+//            artifactId = 'micall-sdk'
+//            version = '1.0.18'
+//        }
+//        debug(MavenPublication) {
+////            from components.debug
+//            groupId = 'com.github.ldev1211'
+//            artifactId = 'micall-sdk'
+//            version = '1.0.18'
+//        }
+//    }
+//}
 //publishing {
 //    publications {
 //        release(MavenPublication) {
