@@ -31,17 +31,44 @@ android {
     }
 
 }
+
 publishing {
     publications {
-        mavenJava(MavenPublication) {
-            groupId = 'com.github.ldev1211'
-            artifactId = 'micall-sdk'
-            version = '1.0.13'
-
-//                from components.java
+        release(MavenPublication) {
+            groupId 'com.github.ldev1211'
+            artifactId 'micall-sdk'
+            version '1.0.15'
         }
     }
 }
+//publishing {
+//    publications {
+//        release(MavenPublication) {
+////            from components.
+//            groupId = 'com.github.ldev1211'
+//            artifactId = 'micall-sdk'
+//            version = '1.0.13'
+//        }
+//        debug(MavenPublication) {
+////            from components.debug
+//            groupId = 'com.github.ldev1211'
+//            artifactId = 'micall-sdk-debug'
+//            version = '1.0.13'
+//        }
+//    }
+//}
+//publishing {
+//    publications {
+//        mavenJava(MavenPublication) {
+//            from components.release
+//            groupId = 'com.github.ldev1211'
+//            artifactId = 'micall-sdk'
+//            version = '1.0.13'
+//
+////                from components.java
+//        }
+//    }
+//}
 dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
 }
