@@ -31,18 +31,18 @@ android {
     }
 
 }
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-//                from components.release
-                groupId = 'com.github.ldev1211'
-                artifactId = 'micall-sdk'
-                version = '1.0.21'
-            }
-        }
-    }
-}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            release(MavenPublication) {
+////                from components.release
+//                groupId = 'com.github.ldev1211'
+//                artifactId = 'micall-sdk'
+//                version = '1.0.21'
+//            }
+//        }
+//    }
+//}
 dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
 }
