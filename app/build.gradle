@@ -9,8 +9,8 @@ android {
     defaultConfig {
 //        applicationId "com.vn.build.micall.sdk"
         minSdk 24
-        targetSdk 34
-        compileSdk 34
+        targetSdk 33
+        compileSdk 32
         versionCode 1
         versionName "1.0"
 
