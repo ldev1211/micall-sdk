@@ -32,27 +32,26 @@ android {
 
 }
 
-publishing {
-    publications {
-        release(MavenPublication) {
-            afterEvaluate {
-                groupId 'org.micall.sdk'
-                artifactId 'micall-sdk'
-                version '1.0.16'
-            }
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+//                from components.release
 
+                groupId = 'com.github.ldev1211'
+                artifactId = 'micall-sdk'
+                version = '1.0.18'
+            }
+            debug(MavenPublication) {
+//                from components.debug
+
+                groupId = 'com.github.ldev1211'
+                artifactId = 'micall-sdk'
+                version = '1.0.18'
+            }
         }
     }
 }
-//publishing {
-//    publications {
-//        register<MavenPublication>("release") {
-//            afterEvaluate {
-//                from(components["release"])
-//            }
-//        }
-//    }
-//}
 
 //publishing {
 //    publications {
